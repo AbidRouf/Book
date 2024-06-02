@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #86d7ff;
+}
+
+.span {
+    color: palevioletred;
+}
+
+.initial-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.start-button:focus {
+    outline: none;
+}
+
+.book-container {
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #86d7ff;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.title-container {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    font-size: 24px;
+    flex: 1;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.top-right-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.bottom-left-image {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.image-container {
+    width: 200px;
+    height: auto;
+}
+
+.arrow {
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow:hover {
+    fill: #007bff;
+    scale: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .book-container {
+        width: 90%;
+        height: 70%;
+    }
+    
+    .title-container {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    
+    .text-container {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+    
+    .top-right-image, .bottom-left-image {
+        width: 30vw;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-container {
+        width: 100%;
+        height: 80%;
+    }
+    
+    .title-container {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    
+    .text-container {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+    
+    .top-right-image, .bottom-left-image {
+        width: 40vw;
+        max-width: 100px;
+    }
+}
